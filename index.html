@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+<body>
+    <header>
+        <div id="top-bar">
+            <a href="index.html"><img src="./Imagenes/LOGO.png" alt="Logo de la tienda" id="logo"></a>
+            <div id="search-container">
+              <input type="text" id="search-bar" placeholder="Buscar...">
+              <button id="search-button">Buscar</button>
+            </div>
+            <div id="user-cart">
+              <button id="user-button">
+                <a href="cuenta.html"><img src="./Imagenes/usuario.png" alt="Icono de usuario" id="user-icon"></a>
+              </button>
+              <button id="us-button"><a id="link-button" href="login.html">Iniciar Sesión</a></button>
+              <a href="carrito.html"><img src="./Imagenes/carrito.png" alt="Icono de carrito" id="cart" clickable></a>
+              <span id="cart-value">$671.00</span>
+            </div>
+          </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-item menu-btn">Menú</button>
+            <a href="abarrotes.html" class="nav-item">Abarrotes</a>
+            <a href="articulos.html" class="nav-item">Artículos del hogar</a>
+            <a href="botanas.html" class="nav-item">Botanas</a>
+            <a href="cuidadop.html" class="nav-item">Cuidado personal</a>
+            <a href="bebidas.html" class="nav-item">Bebidas</a>
+            <a href="productosl.html" class="nav-item">Productos de limpieza</a>
+            <a href="alimentos.html" class="nav-item">Alimentos</a>
+        </div>
+    </nav>
+    
+
+    <section class="ofertas-seccion">
+        <h2>Las mejores ofertas en Abarrotes</h2>
+        <div class="linea-azul"></div>
+        <div class="ofertas-container">
+            <div class="oferta">
+                <img src="./Imagenes/imagen-nescafe.jpg" alt="Producto 1">
+                <h3>Nescafé Clásico 210g</h3>
+                <p class="precio">$109.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="oferta">
+                <img src="./Imagenes/imagen-mayonesa.jpg" alt="Producto 2">
+                <h3>McCormick Mayo.. 725g</h3>
+                <p class="precio">$85.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="oferta">
+                <img src="./Imagenes/imagen-nutrioli.jpg" alt="Producto 3">
+                <h3>Nutrioli Vegetal 800ml</h3>
+                <p class="precio">$36.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="oferta">
+                <img src="./Imagenes/imagen-arrozv.jpg" alt="Producto 4">
+                <h3>Arroz Verde Valle 1kg</h3>
+                <p class="precio">$34.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="oferta">
+                <img src="./Imagenes/imagen-atunad.jpg" alt="Producto 5">
+                <h3>Atún Aceite Dolores 133g</h3>
+                <p class="precio">$21.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="oferta">
+                <img src="./Imagenes/imagen-cornf.jpg" alt="Producto 5">
+                <h3>CornFlakes 660g</h3>
+                <p class="precio">$52.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="oferta">
+                <img src="./Imagenes/imagen-blancobim.jpg" alt="Producto 5">
+                <h3>Pan Blanco Bim 680g</h3>
+                <p class="precio">$43.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            </div>
+    </section>
+ 
+    <section class="categorias-seccion">
+        <h2>Compra de las Categorias Principales</h2>
+        <div class="linea-azulc"></div>
+        <div class="categorias-container">
+            <a href="abarrotes.html" class="categoria">
+                <img src="./Imagenes/imagen-abarrotes.jpg" alt="Abarrotes" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Abarrotes</span>
+                </div>
+            </a>
+            <a href="alimentos.html" class="categoria">
+                <img src="./Imagenes/imagen-alimentos.jpg" alt="Alimentos" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Alimentos</span>
+                </div>
+            </a>
+            <a href="bebidas.html" class="categoria">
+                <img src="./Imagenes/imagen-bebidas.jpg" alt="Bebidas" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Bebidas</span>
+                </div>
+            </a>
+            <a href="abarrotes.html" class="categoria">
+                <img src="./Imagenes/imagen-productos-limpieza.jpg" alt="Productos de limpieza" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Productos de limpieza</span>
+                </div>
+            </a>
+            <a href="articulos.html" class="categoria">
+                <img src="./Imagenes/imagen-articulos-hogar.jpg" alt="Artículos del hogar" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Artículos del hogar</span>
+                </div>
+            </a>
+            <a href="cuidadop.html" class="categoria">
+                <img src="./Imagenes/imagen-cuidado-personal.jpg" alt="Cuidado personal" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Cuidado personal</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+
+    <section class="esenciales-seccion">
+        <h2>Encuentra tus Esenciales Diarios</h2>
+        <div class="linea-azule"></div>
+        <div class="esenciales-container">
+          <div class="esencial">
+            <a href="alimentos.html">
+              <div class="esencial-imagen">
+                <img src="./Imagenes/imagen-esdia.jpg" alt="Esencial 1">
+              </div>
+              <div class="esencial-info">
+                <h3>Esenciales Diarios</h3>
+                <p class="precio-descuento">Arriba de 25% OFF</p>
+              </div>
+            </a>
+          </div>
+          <div class="esencial">
+            <a href="alimentos.html">
+              <div class="esencial-imagen">
+                <img src="./Imagenes/imagen-frutv.jpg" alt="Esencial 2">
+              </div>
+              <div class="esencial-info">
+                <h3>Frutas y verduras</h3>
+                <p class="precio-descuento">Arriba de 15% OFF</p>
+              </div>
+            </a>
+          </div>
+          <div class="esencial">
+            <a href="cuidadop.html">
+              <div class="esencial-imagen">
+                <img src="./Imagenes/imagen-hig.jpg" alt="Esencial 3">
+              </div>
+              <div class="esencial-info">
+                <h3>Higuiene</h3>
+                <p class="precio-descuento">Arriba de 10% OFF</p>
+              </div>
+            </a>
+          </div>
+          <div class="esencial">
+            <a href="bebidas.html">
+              <div class="esencial-imagen">
+                <img src="./Imagenes/imagen-beb.jpg" alt="Esencial 4">
+              </div>
+              <div class="esencial-info">
+                <h3>Bebidas</h3>
+                <p class="precio-descuento">Arriba de 20% OFF</p>
+              </div>
+            </a>
+          </div>
+          <div class="esencial">
+            <a href="bebidas.html">
+              <div class="esencial-imagen">
+                <img src="./Imagenes/imagen-lact.jpg" alt="Esencial 5">
+              </div>
+              <div class="esencial-info">
+                <h3>Lacteos</h3>
+                <p class="precio-descuento">Arriba de 15% OFF</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="categorias-seccion">
+        <h2>Otras Categorías</h2>
+        <div class="linea-azulc"></div>
+        <div class="categorias-container">
+            <a href="bebidas.html" class="categoria">
+                <img src="./Imagenes/imagen-alcohol.jpg" alt="Alcohol" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Alcohol</span>
+                </div>
+            </a>
+            <a href="abarrotes.html" class="categoria">
+                <img src="./Imagenes/imagen-cigarros.jpg" alt="Cigarros" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Cigarros</span>
+                </div>
+            </a>
+            <a href="alimentos.html" class="categoria">
+                <img src="./Imagenes/imagen-pan-dulce.jpg" alt="Pan dulce" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Pan dulce</span>
+                </div>
+            </a>
+            <a href="alimentos.html" class="categoria">
+                <img src="./Imagenes/imagen-congelados.jpg" alt="Congelados" class="rounded">
+                <div class="texto-categoria-contenedor">
+                    <span class="texto-categoria">Congelados</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-contacto">
+            <h2>Contáctanos</h2>
+            <h3>Whats-App</h3>
+            <p>344-106-1984</p>
+            <h3>Llámanos</h3>
+            <p>344-106-1984</p>
+          </div>
+      
+          <div class="footer-acerca-de-nosotros">
+            <h2>About Us</h2>
+            <ul>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-derechos-reservados">
+          <p>&copy; 2024 Todos los derechos reservados. Online Market.</p>
+        </div>
+      </footer>
+      <script src="menu.js"></script> 
+      <script src="login.js"></script>
+      <script src="barra-busqueda.js"></script> 
+      <script src="añadir.js"></script>
+</body>
+</html>

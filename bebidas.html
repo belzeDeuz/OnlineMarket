@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas</title>
+    <link rel="stylesheet" href="bebidas.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+</head>
+<body>
+    <header>
+        <div id="top-bar">
+          <a href="index.html"><img src="./Imagenes/LOGO.png" alt="Logo de la tienda" id="logo"></a>
+            <div id="search-container">
+              <input type="text" id="search-bar" placeholder="Buscar...">
+              <button id="search-button">Buscar</button>
+            </div>
+            <div id="user-cart">
+              <button id="user-button">
+                <a href="cuenta.html"><img src="./Imagenes/usuario.png" alt="Icono de usuario" id="user-icon"></a>
+              </button>
+              <button id="us-button"><a id="link-button" href="login.html">Iniciar Sesión</a></button>
+              <a href="carrito.html"><img src="./Imagenes/carrito.png" alt="Icono de carrito" id="cart" clickable></a>
+              <span id="cart-value">$671.00</span>
+            </div>
+          </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-item menu-btn">Menú</button>
+            <a href="abarrotes.html" class="nav-item">Abarrotes</a>
+            <a href="articulos.html" class="nav-item">Artículos del hogar</a>
+            <a href="botanas.html" class="nav-item">Botanas</a>
+            <a href="cuidadop.html" class="nav-item">Cuidado personal</a>
+            <a href="bebidas.html" class="nav-item">Bebidas</a>
+            <a href="productosl.html" class="nav-item">Productos de limpieza</a>
+            <a href="alimentos.html" class="nav-item">Alimentos</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+          <h2>Filtros de Bebidas</h2>
+          <form action="#">
+            <label for="subcategoria">Subcategoría:</label>
+            <select id="subcategoria" name="subcategoria">
+              <option value="">Todas</option>
+              <option value="frutas-verduras">Frutas y Verduras</option>
+              <option value="legumbres-cereales">Legumbres y Cereales</option>
+              <option value="carne-pescado">Carnes y Pescados</option>
+              <option value="condimentos-salsas">Condimentos y Salsas</option>
+            </select>
+    
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" placeholder="Escribe la marca">
+    
+            <label for="precio-min">Precio mínimo:</label>
+            <input type="number" id="precio-min" name="precio-min">
+    
+            <label for="precio-max">Precio máximo:</label>
+            <input type="number" id="precio-max" name="precio-max">
+    
+            <button type="submit">Aplicar filtros</button>
+          </form>
+    
+          <h2>Productos de Bebidas</h2>
+          <div class="productos">
+            <div class="producto">
+              <img src="producto1.jpg" alt="Producto 1">
+              <h3>Nombre del producto 1</h3>
+              <p>$10.00</p>
+            </div>
+            </div>
+        </div>
+        <main class="main">
+          <section class="producto-seccion">
+            <h2>Más Productos de Bebidas</h2>
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Bebidas/Fresca6.webp" alt="Producto 1">
+                <h3>Fresca sabor toronja de 600ml</h3>
+                <p class="precio">$17.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/Fanta6.webp" alt="Producto 2">
+                <h3>Fanta sabor naranja de 600ml</h3>
+                <p class="precio">$17.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/Sprite6.webp" alt="Producto 3">
+                <h3>Sprite sabor lima-limón 600ml</h3>
+                <p class="precio">$17.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/Sidral.webp" alt="Producto 4">
+                <h3>Sidral Mundet sabor manzana de 600ml</h3>
+                <p class="precio">$17.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/Squirt.webp" alt="Producto 5">
+                <h3>Squirt sabor toronja 600ml</h3>
+                <p class="precio">$15.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/Sangria.webp" alt="Producto 6">
+                <h3>Refresco Sangría Casera 600ml</h3>
+                <p class="precio">$15.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+          <section class="producto-seccion">
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Bebidas/NewMix.webp" alt="Producto 1">
+                <h3>New Mix El Jimador Paloma 473ml</h3>
+                <p class="precio">$31.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/MichelobFS.webp" alt="Producto 2">
+                <h3>Michelob Ultra fresa sandía 355ml</h3>
+                <p class="precio">$26.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/MichelobLP.webp" alt="Producto 3">
+                <h3>Michelob Ultra limón pepino 355ml</h3>
+                <p class="precio">$26.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/MIchelobPP.webp" alt="Producto 4">
+                <h3>Michelob Ultra piña picante 355 ml</h3>
+                <p class="precio">$26.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/CaribeCD.webp" alt="Producto 5">
+                <h3>Caribe Cooler durazno 300ml</h3>
+                <p class="precio">$27.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Bebidas/NewMixV.webp" alt="Producto 6">
+                <h3>New Mix El Jimador Vampiro 473ml</h3>
+                <p class="precio">$31.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="producto-seccion">
+          <div class="producto-container">
+            <div class="producto">
+              <img src="./Bebidas/NewMixC.webp" alt="Producto 1">
+              <h3>New Mix cantarito de 473ml</h3>
+              <p class="precio">$31.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Bebidas/NewMixTL.webp" alt="Producto 2">
+              <h3>New Mix Twist Sabor Limón 350ml</h3>
+              <p class="precio">$26.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Bebidas/SkyyC.webp" alt="Producto 3">
+              <h3>Skyy Cosmo Arándano 275ml</h3>
+              <p class="precio">$32.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Bebidas/SkyyB.webp" alt="Producto 4">
+              <h3>Skyy Blue Citrus 275ml</h3>
+              <p class="precio">$31.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Bebidas/JDC.webp" alt="Producto 5">
+              <h3>Jack Daniels Coca Cola original 350 l</h3>
+              <p class="precio">$35.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Bebidas/JDA.webp" alt="Producto 6">
+              <h3>Jack Daniels Apple 350ml</h3>
+              <p class="precio">$34.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+          </div>
+        </section>
+    </section>
+    <section class="producto-seccion">
+      <div class="producto-container">
+        <div class="producto">
+          <img src="./Bebidas/JDL.webp" alt="Producto 1">
+          <h3>Jack Daniels Lemonade 350ml</h3>
+          <p class="precio">$34.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Bebidas/Mango1l.webp" alt="Producto 2">
+          <h3>Néctar Del Valle de mango 1l</h3>
+          <p class="precio">$24.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Bebidas/Durazno1l.webp" alt="Producto 3">
+          <h3>Néctar Del Valle de durazno 1l</h3>
+          <p class="precio">$24.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Bebidas/Manzana1l.webp" alt="Producto 4">
+          <h3>Néctar Del Valle clarificado sabor manzana 1l</h3>
+          <p class="precio">$24.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Bebidas/Piña1l.webp" alt="Producto 5">
+          <h3>Bebida Del Valle con 30% de piña 1l</h3>
+          <p class="precio">$24.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Bebidas/JumexNaranja.webp" alt="Producto 6">
+          <h3>Jugo Jumex Único Fresco de naranja sin pulpa 960 ml</h3>
+          <p class="precio">$36.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+      </div>
+    </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-contacto">
+                <h2>Contáctanos</h2>
+                <h3>Whats-App</h3>
+                <p>344-106-1984</p>
+                <h3>Llámanos</h3>
+                <p>344-106-1984</p>
+              </div>
+          
+              <div class="footer-acerca-de-nosotros">
+                <h2>About Us</h2>
+                <ul>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="footer-derechos-reservados">
+              <p>&copy; 2024 Todos los derechos reservados. Online Market.</p>
+            </div>
+          </footer>
+</body>
+  <script src="menu.js"></script> 
+  <script src="barra-busqueda.js"></script> 
+  <script src="añadir.js"></script>
+</html>

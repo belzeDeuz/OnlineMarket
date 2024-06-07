@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Responsive Login and Signup For </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="login.css">
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                        
+    </head>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Iniciar Sesión</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Contraseña" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="recuperar.html" class="forgot-pass">Olvidaste la contraseña?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <a href="cuenta.html"><button>Iniciar sesión</button></a>
+                        </div>                        
+                    </form>
+
+                    <div class="form-link">
+                        <span>No tienes una cuenta? <a href="#" class="link signup-link">Regístrate</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="cuenta.html" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Iniciar sesión con Facebook</span>
+                    </a>
+                </div>
+                
+                <div class="media-options">
+                    <a href="cuenta.html" class="field google">
+                        <img src="Imagenes/google.png" alt="" class="google-img">
+                        <span>Iniciar sesión con Google</span>
+                    </a>
+                </div>
+                                
+
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header>Registro</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Ingresa una contraseña" class="password">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirma tu contraseña" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Registrarte</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Ya tienes una cuenta? <a href="#" class="link login-link">Iniciar sesión</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="cuenta.html" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Iniciar sesión con Facebook</span>
+                    </a>
+                </div>
+                
+                <div class="media-options">
+                    <a href="cuenta.html" class="field google">
+                        <img src="Imagenes/google.png" alt="" class="google-img">
+                        <span>Iniciar sesión con Google</span>
+                    </a>
+                </div>                
+
+            </div>
+        </section>
+
+        <!-- JavaScript -->
+        <script src="login.js"></script>
+        <script>// Validar registro
+            document.addEventListener("DOMContentLoaded", function () {
+                const form = document.querySelector(".form.signup form");
+                const emailInput = form.querySelector('input[type="email"]');
+                const passwordInput = form.querySelector('input[placeholder="Ingresa una contraseña"]');
+                const confirmPasswordInput = form.querySelector('input[placeholder="Confirma tu contraseña"]');
+                const submitButton = form.querySelector('button');
+            
+                function isEmailValid(email) {
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return emailPattern.test(email);
+                }
+            
+                function validateForm(event) {
+                    event.preventDefault();
+            
+                    const email = emailInput.value;
+                    const password = passwordInput.value;
+                    const confirmPassword = confirmPasswordInput.value;
+            
+                    if (!isEmailValid(email)) {
+                        alert("Por favor, ingresa un correo electrónico válido.");
+                        return;
+                    }
+            
+                    if (password !== confirmPassword) {
+                        alert("Las contraseñas no coinciden.");
+                        return;
+                    }
+            
+                    alert("Formulario enviado exitosamente.");
+                
+                }
+            
+                submitButton.addEventListener("click", validateForm);
+            });</script>
+    </body>
+</html>

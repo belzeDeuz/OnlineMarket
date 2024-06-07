@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado personal</title>
+    <link rel="stylesheet" href="cuidadop.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+</head>
+<body>
+    <header>
+        <div id="top-bar">
+          <a href="index.html"><img src="./Imagenes/LOGO.png" alt="Logo de la tienda" id="logo"></a>
+            <div id="search-container">
+              <input type="text" id="search-bar" placeholder="Buscar...">
+              <button id="search-button">Buscar</button>
+            </div>
+            <div id="user-cart">
+              <button id="user-button">
+                <a href="cuenta.html"><img src="./Imagenes/usuario.png" alt="Icono de usuario" id="user-icon"></a>
+              </button>
+              <button id="us-button"><a id="link-button" href="login.html">Iniciar Sesión</a></button>
+              <a href="carrito.html"><img src="./Imagenes/carrito.png" alt="Icono de carrito" id="cart" clickable></a>
+              <span id="cart-value">$671.00</span>
+            </div>
+          </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-item menu-btn">Menú</button>
+            <a href="abarrotes.html" class="nav-item">Abarrotes</a>
+            <a href="articulos.html" class="nav-item">Artículos del hogar</a>
+            <a href="botanas.html" class="nav-item">Botanas</a>
+            <a href="cuidadop.html" class="nav-item">Cuidado personal</a>
+            <a href="bebidas.html" class="nav-item">Bebidas</a>
+            <a href="productosl.html" class="nav-item">Productos de limpieza</a>
+            <a href="alimentos.html" class="nav-item">Alimentos</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+          <h2>Filtros de Cuidado Personal</h2>
+          <form action="#">
+            <label for="subcategoria">Subcategoría:</label>
+            <select id="subcategoria" name="subcategoria">
+              <option value="">Todas</option>
+              <option value="frutas-verduras">Frutas y Verduras</option>
+              <option value="legumbres-cereales">Legumbres y Cereales</option>
+              <option value="carne-pescado">Carnes y Pescados</option>
+              <option value="condimentos-salsas">Condimentos y Salsas</option>
+            </select>
+    
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" placeholder="Escribe la marca">
+    
+            <label for="precio-min">Precio mínimo:</label>
+            <input type="number" id="precio-min" name="precio-min">
+    
+            <label for="precio-max">Precio máximo:</label>
+            <input type="number" id="precio-max" name="precio-max">
+    
+            <button type="submit">Aplicar filtros</button>
+          </form>
+    
+          <h2>Productos de Cuidado Personal</h2>
+          <div class="productos">
+            <div class="producto">
+              <img src="producto1.jpg" alt="Producto 1">
+              <h3>Nombre del producto 1</h3>
+              <p>$10.00</p>
+            </div>
+            </div>
+        </div>
+        <main class="main">
+          <section class="producto-seccion">
+            <h2>Más Productos de Cuidado Personal</h2>
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Cuidado/Herbal.webp" alt="Producto 1">
+                <h3>Acondicionador Herbal Essences Prolóngalo 670ml</h3>
+                <p class="precio">$97.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/Optims.webp" alt="Producto 2">
+                <h3>Shampoo Palmolive Optims 2 en 1 extra intensivo 700ml</h3>
+                <p class="precio">$102.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/Cremapeinar.webp" alt="Producto 3">
+                <h3>Crema para peinar Pantene Pro V rizos definidos 300ml</h3>
+                <p class="precio">$76.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/hs21.webp" alt="Producto 4">
+                <h3>Shampoo Head & Shoulders 2 en 1 control caspa 650ml</h3>
+                <p class="precio">$98.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/Cremap.webp" alt="Producto 5">
+                <h3>Crema para peinar Sedal rizos definidos 300ml</h3>
+                <p class="precio">$50.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/Sedal.webp" alt="Producto 6">
+                <h3>Acondicionador Sedal rizos definidos 620ml</h3>
+                <p class="precio">$73.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+          <section class="producto-seccion">
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Cuidado/Lubriderm.webp" alt="Producto 1">
+                <h3>Lubriderm reparación intensiva 400ml</h3>
+                <p class="precio">$104.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/NiveMlk.webp" alt="Producto 2">
+                <h3>NIVEA Milk Nutritiva humectante 400ml</h3>
+                <p class="precio">$99.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/NiveaRI.webp" alt="Producto 3">
+                <h3>NIVEA Regeneración Intensiva humectante 400ml</h3>
+                <p class="precio">$99.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/LubridemN.webp" alt="Producto 4">
+                <h3>Lubriderm piel normal 400ml</h3>
+                <p class="precio">$99.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/HydroBoost.webp" alt="Producto 5">
+                <h3>Neutrogena Hydro Boost en gel ácido hialurónico 400ml</h3>
+                <p class="precio">$179.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Cuidado/LubridemMen.webp" alt="Producto 6">
+                <h3>Lubriderm Men con fragancia 400 ml</h3>
+                <p class="precio">$21.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="producto-seccion">
+          <div class="producto-container">
+            <div class="producto">
+              <img src="./Cuidado/ReazonaPowder.webp" alt="Producto 1">
+              <h3>Rexona powder dry en aerosol para dama 150 ml</h3>
+              <p class="precio">$70.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Cuidado/NiveaMen.webp" alt="Producto 2">
+              <h3>NIVEA MEN invisible black & white spray 150ml</h3>
+              <p class="precio">$85.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Cuidado/NutroBal.webp" alt="Producto 3">
+              <h3>Palmolive Neutro Balance en aerosol unisex 150 ml</h3>
+              <p class="precio">$86.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Cuidado/AxeDark.webp" alt="Producto 4">
+              <h3>Axe dark temptation 150 ml</h3>
+              <p class="precio">$48.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Cuidado/DoveMenCare.webp" alt="Producto 5">
+              <h3>Dove Men+Care invisible dry en aerosol para caballero 89 g</h3>
+              <p class="precio">$66.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Cuidado/Reaxonamen.webp" alt="Producto 6">
+              <h3>Rexona Men antibacterial + invisible 150 ml</h3>
+              <p class="precio">$60.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+          </div>
+        </section>
+    </section>
+    <section class="producto-seccion">
+      <div class="producto-container">
+        <div class="producto">
+          <img src="./Cuidado/DoveTonoU.webp" alt="Producto 1">
+          <h3>Dove tono uniforme calendula en aerosol para dama 210 ml</h3>
+          <p class="precio">$89.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Cuidado/Niveablackwhite.webp" alt="Producto 2">
+          <h3>NIVEA invisible black & white clear spray 150 ml</h3>
+          <p class="precio">$68.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Cuidado/AxeApollo.webp" alt="Producto 3">
+          <h3>Axe apollo antibacterial en aerosol para caballero 152 ml</h3>
+          <p class="precio">$60.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Cuidado/RexonaPowder.webp" alt="Producto 4">
+          <h3>Rexona powder en aerosol 210 ml</h3>
+          <p class="precio">$86.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Cuidado/OldSpiceWOLF.webp" alt="Producto 5">
+          <h3>Body spray Old Spice Wolfthorn 96g</h3>
+          <p class="precio">$73.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Cuidado/OldSpiceLeña.webp" alt="Producto 6">
+          <h3>Body spray Old Spice Leña 96g</h3>
+          <p class="precio">$73.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+      </div>
+    </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-contacto">
+                <h2>Contáctanos</h2>
+                <h3>Whats-App</h3>
+                <p>344-106-1984</p>
+                <h3>Llámanos</h3>
+                <p>344-106-1984</p>
+              </div>
+          
+              <div class="footer-acerca-de-nosotros">
+                <h2>About Us</h2>
+                <ul>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="footer-derechos-reservados">
+              <p>&copy; 2024 Todos los derechos reservados. Online Market.</p>
+            </div>
+          </footer>
+</body>
+  <script src="menu.js"></script> 
+  <script src="barra-busqueda.js"></script> 
+  <script src="añadir.js"></script>
+</html>

@@ -1,0 +1,364 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos generales de la barra superior */
+  #top-bar {
+      background-color: #f8f9fa;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    
+    /* Logo */
+    #logo {
+      height: 60px;
+    }
+    
+    /* Contenedor de búsqueda */
+    #search-container {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      padding: 10px 20px;
+    }
+    
+    /* Barra de búsqueda */
+    #search-bar {
+      min-width: 1000px;
+      height: 30px;
+      margin-right: 10px;
+      border-radius: 30px;
+      padding: 10px;
+      font-size: 14px;
+    }
+    @media (min-width: 1251px) {
+      /* Estilos de la barra de búsqueda para computadoras */
+      #search-bar {
+        min-width: 1000px; /* Ancho mínimo más grande para escritorios */
+      }
+    }
+    @media (min-width: 480px) and (max-width: 1250px) {
+      /* Estilos de la barra de búsqueda para tabletas */
+      #search-bar {
+        min-width: 250px; /* Ancho mínimo mediano para tabletas */
+      }
+    }
+    @media (max-width: 650px) {
+      /* Estilos de la barra de búsqueda para teléfonos inteligentes */
+      #search-bar {
+        min-width: 50px; /* Ancho mínimo más pequeño para teléfonos inteligentes */
+      }
+    }
+      
+    
+    /* Botón de búsqueda */
+    #search-button {
+      height: 35px;
+      border-radius: 15px;
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    #us-button {
+      height: auto;
+      border-radius: 15px;
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 20px;
+    }
+    #link-button{
+      text-decoration: none; /* Eliminar subrayado */
+      color: #fff; /* Color de texto blanco */
+    }
+    
+    /* Contenedor de usuario y carrito */
+    #user-cart {
+      display: flex;
+      align-items: center;
+    }
+    
+    /* Botón de usuario (con hover para simular botón) */
+    #user-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    
+    #user-button:hover {
+      background-color: #eee;
+      border-radius: 5px;
+    }
+    
+    /* Icono de usuario */
+    #user-icon {
+      height: 40px;
+      margin-right: 10px;
+    }
+    
+    /* Valor del carrito */
+    #cart-value {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    /* Carrito clickeable (agregado a la imagen) */
+    #cart {
+      height: 40px;
+      cursor: pointer;
+    }
+  /* Estilos para el navbar */
+  #navbar {
+      background-color: #0056b3;
+  }
+  
+  .nav-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+      transition: max-height 0.5s ease; /* Añadimos transición para la altura */
+      overflow: hidden; /* Oculta el contenido que exceda la altura máxima */
+      max-height: 50px; /* Altura inicial del navbar, solo muestra el botón Menú */
+  }
+  
+  .nav-item {
+      background-color: #fff;
+      color: #333;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 20px;
+      text-decoration: none;
+  }
+  
+  .nav-item:hover {
+      background-color: #cfcfcf;
+  }
+  
+  .menu-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+  }
+  
+  .expanded {
+      max-height: 1000px; /* Altura máxima para mostrar todos los elementos cuando está expandido */
+  }
+  
+  @media screen and (min-width: 650px) {
+      .menu-btn {
+          display: none; /* Oculta el botón de menú en pantallas más grandes */
+      }
+  
+      .nav-container {
+          max-height: none; /* Muestra todos los elementos en pantallas más grandes */
+      }
+  }
+
+  .footer {
+    background-color: #031828;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    grid-column: 1 / -1; /* Ocupa todas las columnas */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-contacto h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contacto h3,
+  .footer-contacto p {
+    margin-bottom: 5px;
+  }
+  
+  .footer-acerca-de-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-acerca-de-nosotros ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-acerca-de-nosotros li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-acerca-de-nosotros a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-derechos-reservados {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+/* Estilos para seccion sidebar */
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Dos columnas: una para el sidebar y otra para el contenido principal */
+    grid-template-rows: auto 1fr auto; /* Tres filas: una para el header, una para el contenido principal y una para el footer */
+    min-height: 100vh; /* Establece la altura mínima del contenedor principal */
+  }
+  
+  /* Estilos del sidebar */
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 3px solid #c4c4c4;
+  }
+  
+  .sidebar h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar form {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .sidebar input[type="text"],
+  .sidebar input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  main{
+    flex: 1; /* Hace que la sección principal ocupe el espacio restante */
+    padding: 20px;
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Coloca los elementos uno encima del otro */
+  }
+
+  h2{
+    font-weight: bold;
+  }
+
+/* Estilos para seccion productos */
+.producto-seccion {
+    display: grid; /* Set display property to grid */
+    grid-template-columns: 1fr; /* Define a single column layout */
+    padding: 0px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.producto-seccion h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.linea-azul {
+    width: 9.2cm;
+    height: 2px;
+    background-color: #007bff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.producto-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se distribuyan en varias filas */
+    justify-content: flex-start; /* Distribuye los productos con espacio entre ellos */
+}
+
+.producto {
+    width: 220px; /* Ajustar según el tamaño deseado */
+    text-align: center;
+    margin-bottom: 20px;
+    border: 3px solid #c4c4c4; /* Agrega un borde gris claro */
+    padding: 15px; /* Agrega espacio interno */
+    border-radius: 5px;
+}
+
+.producto:hover {
+    border: 3px solid #336deb; /* Agrega un borde gris claro */
+}
+
+.producto img {
+    width: auto;
+    height: 150px; /* Ajustar según el tamaño deseado */
+    object-fit: cover; /* Mantener la relación de aspecto */
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.producto .precio {
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.producto .boton-agregar {
+    display: block;
+    width: 80%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Espacio entre productos */
+.producto:not(:first-child) {
+    margin-left: 5px; /* Agrega espacio a la izquierda de todos los productos excepto el primero */
+}
+

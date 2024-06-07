@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos</title>
+    <link rel="stylesheet" href="alimentos.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+</head>
+<body>
+    <header>
+        <div id="top-bar">
+          <a href="index.html"><img src="./Imagenes/LOGO.png" alt="Logo de la tienda" id="logo"></a>
+            <div id="search-container">
+              <input type="text" id="search-bar" placeholder="Buscar...">
+              <button id="search-button">Buscar</button>
+            </div>
+            <div id="user-cart">
+              <button id="user-button">
+                <a href="cuenta.html"><img src="./Imagenes/usuario.png" alt="Icono de usuario" id="user-icon"></a>
+              </button>
+              <button id="us-button"><a id="link-button" href="login.html">Iniciar Sesión</a></button>
+              <a href="carrito.html"><img src="./Imagenes/carrito.png" alt="Icono de carrito" id="cart" clickable></a>
+              <span id="cart-value">$671.00</span>
+            </div>
+          </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-item menu-btn">Menú</button>
+            <a href="abarrotes.html" class="nav-item">Abarrotes</a>
+            <a href="articulos.html" class="nav-item">Artículos del hogar</a>
+            <a href="botanas.html" class="nav-item">Botanas</a>
+            <a href="cuidadop.html" class="nav-item">Cuidado personal</a>
+            <a href="bebidas.html" class="nav-item">Bebidas</a>
+            <a href="productosl.html" class="nav-item">Productos de limpieza</a>
+            <a href="alimentos.html" class="nav-item">Alimentos</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+          <h2>Filtros de Alimentos</h2>
+          <form action="#">
+            <label for="subcategoria">Subcategoría:</label>
+            <select id="subcategoria" name="subcategoria">
+              <option value="">Todas</option>
+              <option value="frutas-verduras">Frutas y Verduras</option>
+              <option value="legumbres-cereales">Legumbres y Cereales</option>
+              <option value="carne-pescado">Carnes y Pescados</option>
+              <option value="condimentos-salsas">Condimentos y Salsas</option>
+            </select>
+    
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" placeholder="Escribe la marca">
+    
+            <label for="precio-min">Precio mínimo:</label>
+            <input type="number" id="precio-min" name="precio-min">
+    
+            <label for="precio-max">Precio máximo:</label>
+            <input type="number" id="precio-max" name="precio-max">
+    
+            <button type="submit">Aplicar filtros</button>
+          </form>
+    
+          <h2>Productos de Alimentos</h2>
+          <div class="productos">
+            <div class="producto">
+              <img src="producto1.jpg" alt="Producto 1">
+              <h3>Nombre del producto 1</h3>
+              <p>$10.00</p>
+            </div>
+            </div>
+        </div>
+        <main class="main">
+          <section class="producto-seccion">
+            <h2>Más Productos de Alimentos</h2>
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Alimentos/Tomate.webp" alt="Producto 1">
+                <h3>Jitomate saladet por kilo</h3>
+                <p class="precio">$48.90/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Cebolla.webp" alt="Producto 2">
+                <h3>Cebolla Blanca por kilo</h3>
+                <p class="precio">$44.90/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Papa.webp" alt="Producto 3">
+                <h3>Papa Blanca alfa por kilo</h3>
+                <p class="precio">$36.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Limon.webp" alt="Producto 4">
+                <h3>Limón sin semilla por kilo</h3>
+                <p class="precio">$42.90/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Serrano.webp" alt="Producto 5">
+                <h3>Chile Serrano por kilo</h3>
+                <p class="precio">$96.00/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Zanahoria.webp" alt="Producto 6">
+                <h3>Zanahoria por kilo</h3>
+                <p class="precio">$11.90/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+          <section class="producto-seccion">
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Alimentos/Naranja.webp" alt="Producto 1">
+                <h3>Naranja Navel por kilo</h3>
+                <p class="precio">$39.90/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Piña.webp" alt="Producto 2">
+                <h3>Piña Miel por kilo</h3>
+                <p class="precio">$19.90/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Melon.webp" alt="Producto 3">
+                <h3>Melón chino por kilo</h3>
+                <p class="precio">$24.90/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Fresas.webp" alt="Producto 4">
+                <h3>Fresas 454g</h3>
+                <p class="precio">$52.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Mango.webp" alt="Producto 5">
+                <h3>Mango ataulfo por kilo</h3>
+                <p class="precio">$44.90/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Alimentos/Manzana.webp" alt="Producto 6">
+                <h3>Manzana granny smith por kilo</h3>
+                <p class="precio">$54.00/kg</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="producto-seccion">
+          <div class="producto-container">
+            <div class="producto">
+              <img src="./Alimentos/Alpura.webp" alt="Producto 1">
+              <h3>Leche Lala 100 sin lactosa proteína 1l</h3>
+              <p class="precio">$30.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Alimentos/HuevoSJ.webp" alt="Producto 2">
+              <h3>Huevo blanco San Juan 30 pzas</h3>
+              <p class="precio">$87.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Alimentos/ManchegoE.webp" alt="Producto 3">
+              <h3>Queso manchego Esmeralda por kilo</h3>
+              <p class="precio">$258.00/kg</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Alimentos/QuesoPanela.webp" alt="Producto 4">
+              <h3>Queso Panela Los Volcanes 400 g</h3>
+              <p class="precio">$70.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Alimentos/QuesoAsadero.webp" alt="Producto 5">
+              <h3>Queso asadero Carranco 400g</h3>
+              <p class="precio">$123.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Alimentos/Oaxaca.webp" alt="Producto 6">
+              <h3>Queso Oaxaca Los Volcanes 400 g</h3>
+              <p class="precio">$84.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+          </div>
+        </section>
+    </section>
+    <section class="producto-seccion">
+      <div class="producto-container">
+        <div class="producto">
+          <img src="./Alimentos/JamonVir.webp" alt="Producto 1">
+          <h3>Jamón de pavo FUD virginia 290 g</h3>
+          <p class="precio">$44.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Alimentos/TocinoA.webp" alt="Producto 2">
+          <h3>Tocino FUD ahumado 250 g</h3>
+          <p class="precio">$85.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Alimentos/ChorizoPavo.webp" alt="Producto 3">
+          <h3>Chorizo de pavo FUD Cuidat + 200 g</h3>
+          <p class="precio">$39.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Alimentos/Papagajo.webp" alt="Producto 4">
+          <h3>Papa en gajo sazonada por kilo</h3>
+          <p class="precio">$90.00/kg</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Alimentos/SalchichasP.webp" alt="Producto 5">
+          <h3>Salchicha de pavo FUD 500g</h3>
+          <p class="precio">$45.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Alimentos/Zwan.webp" alt="Producto 6">
+          <h3>Salchicha de pavo Zwan premium 520g</h3>
+          <p class="precio">$49.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+      </div>
+    </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-contacto">
+                <h2>Contáctanos</h2>
+                <h3>Whats-App</h3>
+                <p>344-106-1984</p>
+                <h3>Llámanos</h3>
+                <p>344-106-1984</p>
+              </div>
+          
+              <div class="footer-acerca-de-nosotros">
+                <h2>About Us</h2>
+                <ul>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="footer-derechos-reservados">
+              <p>&copy; 2024 Todos los derechos reservados. Online Market.</p>
+            </div>
+          </footer>
+</body>
+  <script src="menu.js"></script> 
+  <script src="barra-busqueda.js"></script> 
+  <script src="añadir.js"></script>
+</html>

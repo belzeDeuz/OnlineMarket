@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de limpieza</title>
+    <link rel="stylesheet" href="productosl.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+</head>
+<body>
+    <header>
+        <div id="top-bar">
+          <a href="index.html"><img src="./Imagenes/LOGO.png" alt="Logo de la tienda" id="logo"></a>
+            <div id="search-container">
+              <input type="text" id="search-bar" placeholder="Buscar...">
+              <button id="search-button">Buscar</button>
+            </div>
+            <div id="user-cart">
+              <button id="user-button">
+                <a href="cuenta.html"><img src="./Imagenes/usuario.png" alt="Icono de usuario" id="user-icon"></a>
+              </button>
+              <button id="us-button"><a id="link-button" href="login.html">Iniciar Sesión</a></button>
+              <a href="carrito.html"><img src="./Imagenes/carrito.png" alt="Icono de carrito" id="cart" clickable></a>
+              <span id="cart-value">$671.00</span>
+            </div>
+          </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-item menu-btn">Menú</button>
+            <a href="abarrotes.html" class="nav-item">Abarrotes</a>
+            <a href="articulos.html" class="nav-item">Artículos del hogar</a>
+            <a href="botanas.html" class="nav-item">Botanas</a>
+            <a href="cuidadop.html" class="nav-item">Cuidado personal</a>
+            <a href="bebidas.html" class="nav-item">Bebidas</a>
+            <a href="productosl.html" class="nav-item">Productos de limpieza</a>
+            <a href="alimentos.html" class="nav-item">Alimentos</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+          <h2>Filtros de Productos de Limpieza</h2>
+          <form action="#">
+            <label for="subcategoria">Subcategoría:</label>
+            <select id="subcategoria" name="subcategoria">
+              <option value="">Todas</option>
+              <option value="frutas-verduras">Frutas y Verduras</option>
+              <option value="legumbres-cereales">Legumbres y Cereales</option>
+              <option value="carne-pescado">Carnes y Pescados</option>
+              <option value="condimentos-salsas">Condimentos y Salsas</option>
+            </select>
+    
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" placeholder="Escribe la marca">
+    
+            <label for="precio-min">Precio mínimo:</label>
+            <input type="number" id="precio-min" name="precio-min">
+    
+            <label for="precio-max">Precio máximo:</label>
+            <input type="number" id="precio-max" name="precio-max">
+    
+            <button type="submit">Aplicar filtros</button>
+          </form>
+    
+          <h2>Productos de Productos de Limpieza</h2>
+          <div class="productos">
+            <div class="producto">
+              <img src="producto1.jpg" alt="Producto 1">
+              <h3>Nombre del producto 1</h3>
+              <p>$10.00</p>
+            </div>
+            </div>
+        </div>
+        <main class="main">
+          <section class="producto-seccion">
+            <h2>Más Productos de Productos de Limpieza</h2>
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Productos/Pinol2l.webp" alt="Producto 1">
+                <h3>Pinol el original 2 l</h3>
+                <p class="precio">$43.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/Pinol1l.webp" alt="Producto 2">
+                <h3>Pinol El Original 1 l</h3>
+                <p class="precio">$20.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/Pinol3.webp" alt="Producto 3">
+                <h3>Pinol el original 3.78l</h3>
+                <p class="precio">$101.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/Cloralex1.webp" alt="Producto 4">
+                <h3>Cloralex El Rendidor 950 ml</h3>
+                <p class="precio">$18.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/CloralexG.webp" alt="Producto 5">
+                <h3>Cloralex en gel con detergente 950 ml</h3>
+                <p class="precio">$27.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/CloralexUG.webp" alt="Producto 6">
+                <h3>Cloralex Ultra Gel cítrico fórmula visible 950 ml</h3>
+                <p class="precio">$30.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+          <section class="producto-seccion">
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Productos/Cloralex3.webp" alt="Producto 1">
+                <h3>Cloralex El Rendidor 3.75l</h3>
+                <p class="precio">$41.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/Clorox3.webp" alt="Producto 2">
+                <h3>Clorox triple acción original 3.8l</h3>
+                <p class="precio">$46.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/CloralexG3.webp" alt="Producto 3">
+                <h3>Cloralex en gel 3.75 l</h3>
+                <p class="precio">$58.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/Cloro3A.webp" alt="Producto 4">
+                <h3>Aurrera multiusos con cloro 4l</h3>
+                <p class="precio">$36.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/CloralexM3.webp" alt="Producto 5">
+                <h3>Cloralex Mascotas 3.75l</h3>
+                <p class="precio">$98.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Productos/Fabuloso 3l.webp" alt="Producto 6">
+                <h3>Fabuloso frescura activa fresca lavanda 5l</h3>
+                <p class="precio">$158.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="producto-seccion">
+          <div class="producto-container">
+            <div class="producto">
+              <img src="./Productos/Arm2k.webp" alt="Producto 1">
+              <h3>Bicarbonato de sodio Arm & Hammer 1.81kg</h3>
+              <p class="precio">$79.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Productos/Brasso200.webp" alt="Producto 2">
+              <h3>Limpiador Brasso para metales 200ml</h3>
+              <p class="precio">$176.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Productos/DrBeck.webp" alt="Producto 3">
+              <h3>Limpiador de acero inoxidable Dr. Beckmann 250 ml</h3>
+              <p class="precio">$84.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Productos/Keepers750.webp" alt="Producto 4">
+              <h3>Bar Keepers Friend atomizador + espuma 750ml</h3>
+              <p class="precio">$146.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Productos/PastillasWow.webp" alt="Producto 5">
+              <h3>Pastillas Wow Clean Pisos Ultrabrillosos 200gr</h3>
+              <p class="precio">$39.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Productos/Pledge.webp" alt="Producto 6">
+              <h3>Pledge líquido aroma cítrico 500 ml</h3>
+              <p class="precio">$48.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+          </div>
+        </section>
+    </section>
+    <section class="producto-seccion">
+      <div class="producto-container">
+        <div class="producto">
+          <img src="./Productos/Gauntes.webp" alt="Producto 1">
+          <h3>Guantes Great Value Talla mediana 1 par</h3>
+          <p class="precio">$53.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Productos/Esponja3m.webp" alt="Producto 2">
+          <h3>Fibra esponja 3M Scotch Brite grande 1 pza</h3>
+          <p class="precio">$41.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Productos/Rodillo.webp" alt="Producto 3">
+          <h3>Rodillo 3M Scotch Brite quita pelusa de 60 hojas 1 pza</h3>
+          <p class="precio">$105.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Productos/SistemaLimpieza.webp" alt="Producto 4">
+          <h3>Sistema de limpieza Vileda 1 trapeador, 1 cubo y pedal</h3>
+          <p class="precio">$950.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Productos/FibraM.webp" alt="Producto 5">
+          <h3>Fibra metálica 3M Scotch-Brite en espiral 2 pzas</h3>
+          <p class="precio">$21.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Productos/JergaMicro.webp" alt="Producto 6">
+          <h3>Jerga Great Value de microfibra 50 x 80 cm varios colores 1 pza</h3>
+          <p class="precio">$69.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+      </div>
+    </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-contacto">
+                <h2>Contáctanos</h2>
+                <h3>Whats-App</h3>
+                <p>344-106-1984</p>
+                <h3>Llámanos</h3>
+                <p>344-106-1984</p>
+              </div>
+          
+              <div class="footer-acerca-de-nosotros">
+                <h2>About Us</h2>
+                <ul>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="footer-derechos-reservados">
+              <p>&copy; 2024 Todos los derechos reservados. Online Market.</p>
+            </div>
+          </footer>
+</body>
+  <script src="menu.js"></script> 
+  <script src="barra-busqueda.js"></script> 
+  <script src="añadir.js"></script>
+</html>

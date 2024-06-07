@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanas</title>
+    <link rel="stylesheet" href="botanas.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+</head>
+<body>
+    <header>
+        <div id="top-bar">
+            <a href="index.html"><img src="./Imagenes/LOGO.png" alt="Logo de la tienda" id="logo"></a>
+            <div id="search-container">
+              <input type="text" id="search-bar" placeholder="Buscar...">
+              <button id="search-button">Buscar</button>
+            </div>
+            <div id="user-cart">
+              <button id="user-button">
+                <a href="cuenta.html"><img src="./Imagenes/usuario.png" alt="Icono de usuario" id="user-icon"></a>
+              </button>
+              <button id="us-button"><a id="link-button" href="login.html">Iniciar Sesión</a></button>
+              <a href="carrito.html"><img src="./Imagenes/carrito.png" alt="Icono de carrito" id="cart" clickable></a>
+              <span id="cart-value">$671.00</span>
+            </div>
+          </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-item menu-btn">Menú</button>
+            <a href="abarrotes.html" class="nav-item">Abarrotes</a>
+            <a href="articulos.html" class="nav-item">Articulos del hogar</a>
+            <a href="botanas.html" class="nav-item">Botanas</a>
+            <a href="cuidadop.html" class="nav-item">Cuidado personal</a>
+            <a href="bebidas.html" class="nav-item">Bebidas</a>
+            <a href="productosl.html" class="nav-item">Productos de limpieza</a>
+            <a href="alimentos.html" class="nav-item">Alimentos</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+          <h2>Filtros de Botanas</h2>
+          <form action="#">
+            <label for="subcategoria">Subcategoría:</label>
+            <select id="subcategoria" name="subcategoria">
+              <option value="">Todas</option>
+              <option value="frutas-verduras">Frutas y Verduras</option>
+              <option value="legumbres-cereales">Legumbres y Cereales</option>
+              <option value="carne-pescado">Carnes y Pescados</option>
+              <option value="condimentos-salsas">Condimentos y Salsas</option>
+            </select>
+    
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" placeholder="Escribe la marca">
+    
+            <label for="precio-min">Precio mínimo:</label>
+            <input type="number" id="precio-min" name="precio-min">
+    
+            <label for="precio-max">Precio máximo:</label>
+            <input type="number" id="precio-max" name="precio-max">
+    
+            <button type="submit">Aplicar filtros</button>
+          </form>
+    
+          <h2>Productos de Botanas</h2>
+          <div class="productos">
+            <div class="producto">
+              <img src="producto1.jpg" alt="Producto 1">
+              <h3>Nombre del producto 1</h3>
+              <p>$10.00</p>
+            </div>
+            </div>
+        </div>
+        <main class="main">
+          <section class="producto-seccion">
+            <h2>Más Productos de Botanas</h2>
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Botanas/Mafer.webp" alt="Producto 1">
+                <h3>Cacahuate Mafer enchilado original 170g</h3>
+                <p class="precio">$42.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/ChipsH.webp" alt="Producto 2">
+                <h3>Chip's sabor chile habanero 160g</h3>
+                <p class="precio">$55.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/Takis240.webp" alt="Producto 3">
+                <h3>Botana Barcel Takis Fuego 240g</h3>
+                <p class="precio">$52.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/Runners280.webp" alt="Producto 4">
+                <h3>Botana Barcel Runners sabor salsa picante 280g</h3>
+                <p class="precio">$54.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/TakisOr.webp" alt="Producto 5">
+                <h3>Barcel Takis Fajita 240 g</h3>
+                <p class="precio">$52.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/SabritasOr.webp" alt="Producto 6">
+                <h3>Sabritas Original 160g</h3>
+                <p class="precio">$53.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+          <section class="producto-seccion">
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Botanas/JamaicaGV.webp" alt="Producto 1">
+                <h3>Jamaica Great Value 100g</h3>
+                <p class="precio">$35.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/Doritos223.webp" alt="Producto 2">
+                <h3>Doritos nacho con queso y sabor a chile 223g</h3>
+                <p class="precio">$48.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/ChipsJal.webp" alt="Producto 3">
+                <h3>Chips sabor jalapeño 100g</h3>
+                <p class="precio">$38.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/SacritasOrC.webp" alt="Producto 4">
+                <h3>Sabritas Receta Crujiente clasicas 160 g</h3>
+                <p class="precio">$57.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/NuezGV.webp" alt="Producto 5">
+                <h3>Nuez Great Value 100g</h3>
+                <p class="precio">$62.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Botanas/AlmendraVV.webp" alt="Producto 6">
+                <h3>Almendra Verde Valle 100g</h3>
+                <p class="precio">$45.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="producto-seccion">
+          <div class="producto-container">
+            <div class="producto">
+              <img src="./Botanas/Karameladas.webp" alt="Producto 1">
+              <h3>Barcel pop karameladas 240g</h3>
+              <p class="precio">$43.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Botanas/CHTorciditos.webp" alt="Producto 2">
+              <h3>Cheetos Torciditos sabor queso y chile 240g</h3>
+              <p class="precio">$53.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Botanas/RuflesQue.webp" alt="Producto 3">
+              <h3>Ruffles sabor queso 185g</h3>
+              <p class="precio">$48.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Botanas/TostitosSal.webp" alt="Producto 4">
+              <h3>Tostitos sal 400g</h3>
+              <p class="precio">$41.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Botanas/SabritasAd.webp" alt="Producto 5">
+              <h3>Sabritas adobadas 160g</h3>
+              <p class="precio">$48.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Botanas/SlimPop.webp" alt="Producto 6">
+              <h3>Slim Pop sal de mar 110 g</h3>
+              <p class="precio">$39.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+          </div>
+        </section>
+    </section>
+    <section class="producto-seccion">
+      <div class="producto-container">
+        <div class="producto">
+          <img src="./Botanas/SlimPopM.webp" alt="Producto 1">
+          <h3>Slim Pop sal de mar 18g</h3>
+          <p class="precio">$12.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Botanas/SlimPopL.webp" alt="Producto 2">
+          <h3>Slim Pop limón y sal de mar 18 g</h3>
+          <p class="precio">$12.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Botanas/PalomitasLCH.webp" alt="Producto 3">
+          <h3>Great Value fuego sabor limón y chile 40g</h3>
+          <p class="precio">$13.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Botanas/PalomitasSal.webp" alt="Producto 4">
+          <h3>Great Value con sal 30g</h3>
+          <p class="precio">$13.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Botanas/MaferLimon.webp" alt="Producto 5">
+          <h3>Mafer japonés con sal y limón 65g</h3>
+          <p class="precio">$17.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Botanas/HotNuts.webp" alt="Producto 6">
+          <h3>Hot Nuts original 100g</h3>
+          <p class="precio">$25.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+      </div>
+    </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-contacto">
+                <h2>Contáctanos</h2>
+                <h3>Whats-App</h3>
+                <p>344-106-1984</p>
+                <h3>Llámanos</h3>
+                <p>344-106-1984</p>
+              </div>
+          
+              <div class="footer-acerca-de-nosotros">
+                <h2>About Us</h2>
+                <ul>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="footer-derechos-reservados">
+              <p>&copy; 2024 Todos los derechos reservados. Online Market.</p>
+            </div>
+          </footer>
+</body>
+  <script src="menu.js"></script> 
+  <script src="barra-busqueda.js"></script> 
+  <script src="añadir.js"></script>
+</html>

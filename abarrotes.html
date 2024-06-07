@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes</title>
+    <link rel="stylesheet" href="abarrotes.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+</head>
+<body>
+    <header>
+        <div id="top-bar">
+          <a href="index.html"><img src="./Imagenes/LOGO.png" alt="Logo de la tienda" id="logo"></a>
+            <div id="search-container">
+              <input type="text" id="search-bar" placeholder="Buscar...">
+              <button id="search-button">Buscar</button>
+            </div>
+            <div id="user-cart">
+              <button id="user-button">
+                <a href="cuenta.html"><img src="./Imagenes/usuario.png" alt="Icono de usuario" id="user-icon"></a>
+              </button>
+              <button id="us-button"><a id="link-button" href="login.html">Iniciar Sesión</a></button>
+              <a href="carrito.html"><img src="./Imagenes/carrito.png" alt="Icono de carrito" id="cart" clickable></a>
+              <span id="cart-value">$671.00</span>
+            </div>
+          </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <button class="nav-item menu-btn">Menú</button>
+            <a href="abarrotes.html" class="nav-item">Abarrotes</a>
+            <a href="articulos.html" class="nav-item">Artículos del hogar</a>
+            <a href="botanas.html" class="nav-item">Botanas</a>
+            <a href="cuidadop.html" class="nav-item">Cuidado personal</a>
+            <a href="bebidas.html" class="nav-item">Bebidas</a>
+            <a href="productosl.html" class="nav-item">Productos de limpieza</a>
+            <a href="alimentos.html" class="nav-item">Alimentos</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+          <h2>Filtros de Abarrotes</h2>
+          <form id="filter-form">
+            <label for="category">Categoría:</label>
+            <select id="category" name="category">
+                <option value="all">Todas</option>
+                <option value="cafe">Café</option>
+                <option value="cereales">Cereales</option>
+                <option value="aceites">Aceites</option>
+            </select>
+            <label for="brand">Marca:</label>
+            <input type="text" id="brand" name="brand" placeholder="Marca...">
+            <label for="min-price">Precio Mínimo:</label>
+            <input type="number" id="min-price" name="min-price" min="0" placeholder="0">
+            <label for="max-price">Precio Máximo:</label>
+            <input type="number" id="max-price" name="max-price" min="0" placeholder="1000">
+            <button type="submit">Aplicar Filtros</button>
+          </form>
+    
+          <h2>Productos de Abarrotes</h2>
+          <div class="productos">
+            <div class="producto">
+              <img src="producto1.jpg" alt="Producto 1">
+              <h3>Nombre del producto 1</h3>
+              <p>$10.00</p>
+            </div>
+            </div>
+        </div>
+        <main class="main">
+          <section class="producto-seccion">
+            <h2>Más Productos de Abarrotes</h2>
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Abarrotes/Capullo.jpg" alt="Producto 1">
+                <h3>Aceite Capullo 840ml</h3>
+                <p class="precio">$48.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/BBQ.jpg" alt="Producto 2">
+                <h3>Hunts Original BBQ 620g</h3>
+                <p class="precio">$35.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/Pastap.jpg" alt="Producto 3">
+                <h3>Barilla Pasta Penne 500G</h3>
+                <p class="precio">$20.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/Carnation.jpg" alt="Producto 4">
+                <h3>CARNATION Nestlé Polvo 1.3kg</h3>
+                <p class="precio">$150.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/Inca.jpg" alt="Producto 5">
+                <h3>Manteca Inca 1kg</h3>
+                <p class="precio">$102.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/Legal180.jpg" alt="Producto 6">
+                <h3>Legal Café soluble 180gr</h3>
+                <p class="precio">$67.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+          <section class="producto-seccion">
+            <div class="producto-container">
+              <div class="producto">
+                <img src="./Abarrotes/MermeladaF.jpg" alt="Producto 1">
+                <h3>McCormick Mermelada de Fresa 980g</h3>
+                <p class="precio">$80.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/Maizena.jpg" alt="Producto 2">
+                <h3>Maizena Original 425 g</h3>
+                <p class="precio">$45.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/purev.jpg" alt="Producto 3">
+                <h3>Verde Valle Puré de Papa 160g</h3>
+                <p class="precio">$30.00</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/ArrozM.jpg" alt="Producto 4">
+                <h3>Arroz a la Mexicana Knorr 155g </h3>
+                <p class="precio">$26.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/Nescafe120.jpg" alt="Producto 5">
+                <h3>Nescafé Clásico Café Soluble 200g</h3>
+                <p class="precio">$109.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+              <div class="producto">
+                <img src="./Abarrotes/MostazaMc.jpg" alt="Producto 6">
+                <h3>McCormick Mostaza 430g</h3>
+                <p class="precio">$33.50</p>
+                <a href="#" class="boton-agregar">Agregar al carrito</a>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="producto-seccion">
+          <div class="producto-container">
+            <div class="producto">
+              <img src="./Abarrotes/Mazola.jpg" alt="Producto 1">
+              <h3>Mazola Aceite de Maíz 765ml</h3>
+              <p class="precio">$67.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Abarrotes/Zulga1k.jpg" alt="Producto 2">
+              <h3>Zulka Azucar Morena 900 Gr</h3>
+              <p class="precio">$42.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Abarrotes/CremaEl.jpg" alt="Producto 3">
+              <h3>Campbells Crema de Elote 430gr</h3>
+              <p class="precio">$32.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Abarrotes/FrijolesBI.jpg" alt="Producto 4">
+              <h3>Isadora Frijoles Refritos Bayos 400gr</h3>
+              <p class="precio">$17.00</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Abarrotes/Puretom.jpg" alt="Producto 5">
+              <h3>Tomates molidos Del Fuerte condimentados 259g</h3>
+              <p class="precio">$11.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+            <div class="producto">
+              <img src="./Abarrotes/FrijolesBS.webp" alt="Producto 6">
+              <h3>Frijoles Bayos La Sierra refritos en lata 580g</h3>
+              <p class="precio">$21.50</p>
+              <a href="#" class="boton-agregar">Agregar al carrito</a>
+            </div>
+          </div>
+        </section>
+    </section>
+    <section class="producto-seccion">
+      <div class="producto-container">
+        <div class="producto">
+          <img src="./Abarrotes/Nutella.webp " alt="Producto 1">
+          <h3>Crema de avellanas Nutella 200g</h3>
+          <p class="precio">$52.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Abarrotes/SopaMun.webp" alt="Producto 2">
+          <h3>Sopa de municiones Knorr 115g</h3>
+          <p class="precio">$22.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Abarrotes/CosteñaPure.webp" alt="Producto 3">
+          <h3>Puré de tomate La Costeña condimentado 210 g</h3>
+          <p class="precio">$9.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Abarrotes/SopaNFideo.webp" alt="Producto 4">
+          <h3>Sopa de fideo Knorr 115g</h3>
+          <p class="precio">$22.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Abarrotes/SopaLetras.webp" alt="Producto 5">
+          <h3>Sopa de letras Knorr 115g</h3>
+          <p class="precio">$21.50</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+        <div class="producto">
+          <img src="./Abarrotes/SopaPollo.webp" alt="Producto 6">
+          <h3>Sopa Knorr fideos con pollo 95g</h3>
+          <p class="precio">$19.00</p>
+          <a href="#" class="boton-agregar">Agregar al carrito</a>
+        </div>
+      </div>
+    </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-contacto">
+                <h2>Contáctenos</h2>
+                <h3>Whats-App</h3>
+                <p>344-106-1984</p>
+                <h3>Llámanos</h3>
+                <p>344-106-1984</p>
+              </div>
+          
+              <div class="footer-acerca-de-nosotros">
+                <h2>About Us</h2>
+                <ul>
+                  <li><a href="#">Terms and Conditions</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="footer-derechos-reservados">
+              <p>&copy; 2024 Todos los derechos reservados. Online Market.</p>
+            </div>
+          </footer>
+</body>
+
+  <script src="menu.js"></script>
+  <script src="barra-busqueda.js"></script>
+  <script src="añadir.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const filterForm = document.getElementById("filter-form");
+
+        filterForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            filterProducts();
+        });
+
+        function filterProducts() {
+            const category = document.getElementById("category").value.toLowerCase();
+            const brand = document.getElementById("brand").value.toLowerCase();
+            const minPrice = parseFloat(document.getElementById("min-price").value);
+            const maxPrice = parseFloat(document.getElementById("max-price").value);
+            const products = document.querySelectorAll(".oferta");
+
+            products.forEach(product => {
+                const productCategory = product.getAttribute("data-category").toLowerCase();
+                const productBrand = product.getAttribute("data-brand").toLowerCase();
+                const productPrice = parseFloat(product.getAttribute("data-price"));
+
+                let isVisible = true;
+
+                if (category !== "all" && category !== productCategory) {
+                    isVisible = false;
+                }
+
+                if (brand && !productBrand.includes(brand)) {
+                    isVisible = false;
+                }
+
+                if (!isNaN(minPrice) && productPrice < minPrice) {
+                    isVisible = false;
+                }
+
+                if (!isNaN(maxPrice) && productPrice > maxPrice) {
+                    isVisible = false;
+                }
+
+                product.style.display = isVisible ? "block" : "none";
+            });
+        }
+    });
+</script>
+</html>
